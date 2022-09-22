@@ -1,0 +1,81 @@
+body
+{
+    background-color: rgb(255, 250, 233);
+}
+
+
+.contain
+{
+    width: 800px;
+    height: 480px;
+    position:relative;
+    top: 50px;
+    left: 25%;
+    display:flex;
+    box-shadow: rgba(101, 101, 104, 0.2) 1px 1px 10px 1px;
+
+}
+.contain h1
+{
+    color: rgb(65, 65, 65);
+    font-size: 1.5rem;
+}
+.login
+{
+    width: 400px;
+    background-color: rgba(17, 220, 235, 0.836);
+    padding-top: 100px;
+    text-align: center;
+}
+.registationfo
+{
+    width: 400px;
+    background-color: rgba(23, 221, 162, 0.973);
+    padding-top: 100px;
+    text-align: center;
+}
+input
+{
+    width:80%;
+    height: 30px;
+    background-color:  rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    border: none;
+    box-shadow: .5px .5px .5px .5px rgba(161, 161, 161, 0.37);
+    font-size: .8rem; 
+    color: rgb(0, 0, 0);
+    font-weight:700;
+    padding-left:10px;
+    margin-top: 5px;
+}
+label
+{
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    float: left;
+    margin-left: 40px;
+}
+.btn {
+    width: 46%;
+    border: none;
+    outline: none;
+    height: 35px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: 900;
+    margin-left: 10px;
+  }
+  
+  .btn:hover {
+    background-color: #dffbfc;
+    color: rgb(0, 0, 0);
+  }
+  p
+  {
+      color: rgb(107, 107, 107);
+      font-weight: 900;
+      background-color: rgb(18, 121, 115);
+  }

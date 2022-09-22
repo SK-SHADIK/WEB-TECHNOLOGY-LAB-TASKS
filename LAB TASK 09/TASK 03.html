@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TASK 03</title>
+    </head>
+    <body>
+        <p id="pera">Change the text of this pragraph by "LAB 9 Task 1 submitted by ...</p>
+
+        <button id="btn">Click me to change the above text...</button>
+
+        <script>
+            document.getElementById("btn").onclick = changeParaText;
+            
+            function changeParaText() {
+                var string1 = "Submitted by Name: HASAN, SHADIK; ID: 19-39357-1 using button click event at "+ new Date();
+                string1 = string1.fontcolor("blue");
+                document.getElementById("pera").innerHTML = string1;
+                document.getElementById("pera").style.padding = "50px";
+                document.getElementById("pera").style.border = "5px solid #000";
+                document.getElementById("pera").style.margin = "10px";
+            }
+        </script>
+    </body>
+</html>

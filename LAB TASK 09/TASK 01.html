@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TASK 01</title>
+        <link rel="stylesheet" type="text/css" href="TASK01_STYLE.css">
+    </head>
+    <body>
+        <h3>Basic Aljebra With Javascript</h3>
+
+        <table border="01" width="100%">
+            <tr>
+                <th>Random Number 01</th>
+                <th>Random Number 02</th>
+            </tr>
+            
+            <tr>
+                <td><p id="randNum1"></p></td>
+                <td><p id="randNum2"></p></td>
+            </tr>
+
+            <tr>
+                <td>Add</td>
+                <td><p id="add"></p></td>
+            </tr>
+
+            <tr>
+                <td>Subtract</td>
+                <td><p id="subtract"></p></td>
+            </tr>
+
+            <tr>
+                <td>Multiply</td>
+                <td><p id="multiply"></p></td>
+            </tr>
+
+            <tr>
+                <td>Divide</td>
+                <td><p id="divide"></p></td>
+            </tr>
+
+        </table>
+
+        <br>
+
+        <button onclick="Refresh()" class="button" >Regenerate Numbers</button>
+
+        <script>
+            function Refresh() {
+                window.parent.location = window.parent.location.href;
+            }
+
+            var rand1, rand2;
+
+            rand1 = Math.floor(Math.random()*100)+1;
+            rand2 = Math.floor(Math.random()*100)+1;
+
+
+            var add = rand1 + rand2;
+
+            if (rand1 < rand2){
+                var temp = rand1;
+                rand1 = rand2;
+                rand2 = temp;
+            }
+            var subtract = rand1 - rand2;
+            var multiply = rand1 * rand2;
+            var divide = Math.floor(rand1 / rand2);
+
+            document.getElementById("randNum1").innerHTML = rand1;
+            document.getElementById("randNum2").innerHTML = rand2;
+            document.getElementById("add").innerHTML = add;
+            document.getElementById("subtract").innerHTML = subtract;
+            document.getElementById("multiply").innerHTML = multiply;
+            document.getElementById("divide").innerHTML = divide;
+
+        </script>
+    </body>
+</html>
